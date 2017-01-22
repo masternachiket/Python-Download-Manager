@@ -45,7 +45,7 @@ ttk.Label(mainframe, text = "Download\nLocation:- ").grid(column = 1, row = 8, s
 def callback(downloadFrom, saveLocation):
     os.system("downloadNow.py")
 
-ttk.Button(mainframe, text="Download Now", command = lambda: callback(downloadFrom, saveLocation)).grid(column = 2, row = 13, sticky = E)
+ttk.Button(mainframe, text="Download", command = lambda: callback(downloadFrom, saveLocation)).grid(column = 2, row = 13, sticky = E)
 
 for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
 
